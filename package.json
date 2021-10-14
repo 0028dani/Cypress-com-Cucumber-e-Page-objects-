@@ -13,10 +13,10 @@
   "dependencies": {},
   "devDependencies": {
     "cucumber": "^7.0.0-rc.0",
-    "cypress": "^3.8.3",
+    "cypress": "^8.6.0",
     "cypress-cucumber-preprocessor": "^4.2.0"
   },
   "cypress-cucumber-preprocessor": {
-    "step_definitions": "cypress/support/steps"  
+    "step_definitions": "cypress/support/steps"
   }
 }
