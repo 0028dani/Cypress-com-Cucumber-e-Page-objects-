@@ -1,6 +1,27 @@
+import AtuandoComCheckboxs from "../pageobjects/checkboxsPage";
+
+const atuandoComCheckboxs =  new AtuandoComCheckboxs
+
 Given(/^que estou no site$/, () => {
-	cy.visit('https://wcaquino.me/cypress/componentes.html')
+	atuandoComCheckboxs.AcessarURL()
 });
+
+
+When(/^selecione o checkbox pizza$/, () => {
+	atuandoComCheckboxs.SelecionarPizza()
+});
+
+
+And(/^selecione todos os checkboxs$/, () => {
+	atuandoComCheckboxs.fullCheckboxs()
+});
+
+And(/^verificar dois checkbox$/, () => {
+	atuandoComCheckboxs.verificarCheckboxPizza()
+	atuandoComCheckboxs.verificarCheckboxVegetariana()
+});
+
+
 
 
 
