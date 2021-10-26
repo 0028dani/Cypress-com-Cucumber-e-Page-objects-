@@ -16,5 +16,10 @@ And(/^preenche o novo campo$/, () => {
 	EsperaSinc.NovoCampo()
 });
 
+And(/^verificar se existe$/, () => {
+	EsperaSinc.VerificarExistenciaNovoCampo()
+});
+
+
 
 

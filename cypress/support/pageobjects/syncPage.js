@@ -25,6 +25,22 @@ class esperaSinc {
         .type('Funciona')
     }
 
+    VerificarExistenciaNovoCampo () {
+        cy.get(sync.novoCampo())
+            .should('not.exist')
+
+        cy.get(sync.botaoRespostaDemorado())
+            .click()
+
+        cy.get(sync.novoCampo())
+            .should('not.exist')
+        
+        cy.get(sync.novoCampo())
+            .should('exist')
+            .type('Funciona')
+
+    }
+
 }
 
 export default esperaSinc
