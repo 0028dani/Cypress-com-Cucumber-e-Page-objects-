@@ -20,6 +20,14 @@ And(/^verificar se existe$/, () => {
 	EsperaSinc.VerificarExistenciaNovoCampo()
 });
 
+And(/^click retry$/, () => {
+	EsperaSinc.ClickRetry()
+});
 
 
+And(/^botão lista Dom$/, () => {
+	EsperaSinc.botaoListDom()
+});
+
+ 
 

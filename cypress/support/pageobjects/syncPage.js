@@ -41,6 +41,26 @@ class esperaSinc {
 
     }
 
+    ClickRetry() {
+        cy.get(sync.clickretry())
+            .click()
+            .click()
+            .should('have.value', '111')
+    }
+
+    // diferença de should e then
+    botaoListDom() {
+        cy.get(sync.ListarDom())
+            //.click()
+        //cy.get(sync.span())
+        .should($el => {
+            //console.log($el)
+            expect($el).to.have.length(1)
+            return 2
+        }). and('have.id', 'buttonListDOM')
+
+    }
+
 }
 
 export default esperaSinc

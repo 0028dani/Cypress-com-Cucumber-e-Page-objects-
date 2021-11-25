@@ -25,6 +25,7 @@ class AtuandoComCheckboxs {
     verificarCheckboxVegetariana(){
         cy.get(primeiroCheckboxs.VerificarCheckboxVegetariana())
         .should('be.checked')
+        cy.title().debug()
     }
 }
 
