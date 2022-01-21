@@ -1,4 +1,4 @@
-import syncElements from "../elements/syncElements";
+  import syncElements from "../elements/syncElements";
 
 const sync = new syncElements
 
